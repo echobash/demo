@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body>
+    <strong style="color:green">Todo Page</strong>
+    <ol>
+      {% for todo in todos%}
+        <li>{{todo.title}} - {{todo.type}} - {% if todo.completed %} Completed {% else %} Not Completed {%endif%}</li>
+      {% endfor %}
+    </ol>
+  </body>
+</html>
