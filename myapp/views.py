@@ -12,5 +12,5 @@ def about(request):
 
 
 def todo(request):
-    items = TodoItem.objects.filter(type ='Interview')
+    items = TodoItem.objects.all()
     return render(request, 'todo.html', {"todos": items})
